@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <title>FrankEinstein</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Charm&family=Cinzel:wght@600&family=Jolly+Lodger&family=Kirang+Haerang&family=Staatliches&family=Stardos+Stencil:wght@700&family=Trade+Winds&family=Unkempt:wght@700&display=swap');
+ @keyframes headani
+ {
+   from{color:red;left:0px;top:0px;}
+   to{left:100px;top:0px;}
+ }
+@keframes sec
+{
+  from{color:#ffffff;}
+  to{color:#000000;}
+  
+}
+h1{
+  font-size:500%;
+  color:#ffffff;
+  text-align:center;
+  font-family:'Jolly Lodger', serif;
+  animation:headani 0.8s infinite;
+
+}
+#bold{
+  color:#ff0000;
+  
+}
+body
+{ color:#ffffff;
+ background-image:url('https://wallpapercave.com/wp/S7jeQ7U.jpg');
+}
+#intro,#timecal
+{
+  text-align:justify;
+  margin-left:20%;
+  margin-right:20%;
+  font-size:115%;
+  font-family:Trade Winds;
+  font-style:italic;
+  width:65%;
+  display:inline-block;
+  float:left;
+    text-shadow: 2px 2px #555555;
+}
+
+h2
+{
+  text-align:center;
+}
+label
+{
+  
+  font-family:Charm;
+  text-align: justify;
+}
+input
+{
+  border-radius:8px;
+  border-color:#000000;
+}
+
+
+
+#timecal
+{
+  color:red;
+  
+}
+#result
+{
+  text-align:center;
+}
+ form
+{
+  text-align:center;
+  color:#ffffff;
+}
+#calcu
+{
+  text-align:center;
+ 
+
+   animation:sec 4s infinite;
+
+}
+#calcu:hover
+{
+  color:#ffffff;
+ 
+}
+#result
+{
+  width:50%;
+}
+#calcu,#result
+{
+  display:block;
+}
+
+#listhead
+{
+ 
+ background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvqFMLOy1ApaaPWQvxrtKhrHdC8TxPX41Aeg&usqp=CAU');
+  border-radius:8px;
+  font-family:Kirang Haerang;
+  font-size:120%;
+  
+
+}
+#inside
+{
+  display:none;
+}
+#a_list
+{
+  width:15%;
+}
+#a_list:hover #inside
+{
+  display:block;
+ 
+}
+a{
+  text-decoration:none;
+  color:white;
+}
+#navli:hover
+{
+  background:#000000;
+  font-style:italic;
+  color:#000000;
+  border-radius:5px;
+}
+#clea
+{ 
+  width:200px;
+  height:100px;
+
+  margin-left:46%;
+  font-family:Bowlby One SC;
+  text-align:center;
+  
+}
+
+
+#clea,#calcu
+{
+  display:block;
+}
+#clea:hover
+{
+  color:rgb(255,0,0);
+}
+    </style>
+    <script type="text/javascript">
+          function time_dilation()
+{
+  var vel=document.getElementById('velocity').value;
+  var T=document.getElementById('time').value;
+const c=299792458;
+  var beta=Math.pow(vel,2)/Math.pow(c,2);
+  var gamma=1/Math.sqrt(1-beta);
+  var Td=T*gamma;
+  if(vel>c||vel==c)
+    {
+      alert('Please enter the velocity less than the speed of light(299792458 m/s)');
+    }
+  else
+  
+document.getElementById("calcu").innerHTML="TIme elapsed according to the external observer is "+Td+' s';
+  
+}
+
+function clr_fun()
+{
+  document.getElementById("calcu").innerHTML="Calculate";
+  document.getElementById("velocity").value=0;
+  document.getElementById("time").value=0;
+  
+}
+    </script>
+  </head>
+  <body>
+    <h1 id="h_id">FrankEinstein</h1>
+    <ul id="a_list">
+      <li id="listhead">Navigate
+      <ul id="inside">
+        <li id="navli"><a href="#h_id">Home</a></li>
+        <li id="navli"><a href="#timecal">Time dilation Calculator</a></li>
+        <li id="navli"><a href="https://instagram.com/abhilash__hegde?igshid=1xzjo7aqainp0" target="blank">About</a></li>
+        </ul>
+      </li>
+    </ul>
+  <div id="intro">
+    <p>Albert Einstein was a German mathematician and physicist who developed the special and general theories of relativity.At the start of his scientific work, Einstein realized the inadequacies of Newtonian mechanics and his special theory of relativity stemmed from an attempt to reconcile the laws of mechanics with the laws of the electromagnetic field. He dealt with classical problems of statistical mechanics and problems in which they were merged with quantum theory: this led to an explanation of the Brownian movement of molecules. He investigated the thermal properties of light with a low radiation density and his observations laid the foundation of the photon theory of light.In 1921, he won the Nobel Prize for physics for his explanation of the photoelectric effect.Einstein first proposed a special theory of relativity in 1905 in his paper, “On the Electrodynamics of Moving Bodies,” taking physics in an electrifying new direction.The General Theory of Relativity explains how gravity works.Both Special theory of relativity and General theory of relativity consider TIME to be relative.Einstein’s researches are, of course, well chronicled and his more important works include Special Theory of Relativity (1905), Relativity (English translations, 1920 and 1950), General Theory of Relativity (1916), Investigations on Theory of Brownian Movement (1926), and The Evolution of Physics (1938). Among his non-scientific works, About Zionism (1930), Why War? (1933), My Philosophy (1934), and Out of My Later Years (1950) are perhaps the most important.</p>
+    <h2>The Special Theory of relativity</h2>
+    <p> According to Special Theory of relativity time runs slower for a body moving with a velocity 'V' than a body which is at rest.If a person is moving with velocity 'v'.Let time elapsed to reach point B from point A be T. According to the external oberver the same event would take time Td,where Td' is always greater than T.This phenomenon is called <strong id="bold">Time dilation</strong>.This proves that time is not absolute,it runs at a diffent rate with relative to  different frames of reference.</p>
+    </div>
+  <div id=timecal>
+   <h2>Time dilation Calculator</h2>
+    <form>
+    <label for="velocity" >Enter the velocity of the body with relative to the observer in m/s</label><br>
+    <input type="number" id="velocity" required="number" value=0><br>
+    <label for="time">Please enter the time elapsed according to the body in s</label><br>
+      <input type="number" id="time" required="number" value=0><br>
+    </form>
+      <p onclick="time_dilation()" id="calcu">Calculate</p>
+    </div>
+    <div class="cl"> <p id="clea" onclick="clr_fun()">Wanna try for different values?</p></div>
+   
+   
+    
+  
+  </body>
+  </html>
